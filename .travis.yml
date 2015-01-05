@@ -1,0 +1,19 @@
+language: ruby
+ruby:
+  - "2.1.2"
+before_install:
+  #- command1
+  #- command2
+before_script:
+  - bundle install
+  #- php composer.phar install
+  #- php app/console xxxx
+script:
+  #- phpunit -c app
+  #- phantomjs xxxx/run-jasmine.js xxxx/test.html
+
+notifications:
+  emails:
+    - yusuke.nozoe@gmail.com
+  on_success: always # default: change
+  on_failure: always
